@@ -10,5 +10,6 @@ class UserModel(models.Model):
     username = models.CharField(max_length=20, null=False)
     password = models.CharField(max_length=256, null=False)
     bio = models.CharField(max_length=256, default='')
+    email = models.EmailField(max_length=256, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
